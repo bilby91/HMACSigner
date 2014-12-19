@@ -1,0 +1,17 @@
+PODS:
+  - HMACSigner (0.1.0)
+  - Kiwi (2.3.1)
+
+DEPENDENCIES:
+  - HMACSigner (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  HMACSigner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HMACSigner: 5b0ee2efe4f51496ebac86b3d827adaddc79f0dc
+  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
+
+COCOAPODS: 0.35.0
