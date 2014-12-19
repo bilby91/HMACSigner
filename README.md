@@ -1,6 +1,6 @@
 # HMACSigner
 
-[![CI Status](http://img.shields.io/travis/Martin Fernandez/HMACSigner.svg?style=flat)](https://travis-ci.org/Martin Fernandez/HMACSigner)
+[![CI Status](http://img.shields.io/travis/bilby91/HMACSigner.svg?style=flat)](https://travis-ci.org/Martin Fernandez/HMACSigner)
 [![Version](https://img.shields.io/cocoapods/v/HMACSigner.svg?style=flat)](http://cocoadocs.org/docsets/HMACSigner)
 [![License](https://img.shields.io/cocoapods/l/HMACSigner.svg?style=flat)](http://cocoadocs.org/docsets/HMACSigner)
 [![Platform](https://img.shields.io/cocoapods/p/HMACSigner.svg?style=flat)](http://cocoadocs.org/docsets/HMACSignerer)
@@ -11,9 +11,9 @@ HMACSigner signs your requests using HMAC + SHA1. It was adesigned to work with 
 
 Basically it does this
 
-	1 Calculates a canonical string like this 'Content-Type,MD5(Body),URI,HTTPDate'
-	2 Encrypts the canonical string using the secret
-	3 Adds the 'Authorization' header with "APIAuth identifier:encryptedString" 
+1. Calculates a canonical string like this 'Content-Type,MD5(Body),URI,HTTPDate'
+2. Encrypts the canonical string using the secret
+3. Adds the 'Authorization' header with "APIAuth identifier:encryptedString" 
 
 To use it:
 
