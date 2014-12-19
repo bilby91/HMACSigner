@@ -10,8 +10,7 @@
 
 @implementation NSDate (HTTP)
 
-+ (NSString *)HTTPDateString
-{
++ (NSString *)HTTPDateString {
   NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
   formatter.dateFormat       = @"EEE, dd MMM yyyy HH:mm:ss z";
   formatter.timeZone         = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];

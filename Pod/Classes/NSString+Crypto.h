@@ -18,12 +18,12 @@
 - (NSString *)base64MD5;
 
 /**
- *  <#Description#>
+ *  Calculates the SHA1 with the given secret
  *
- *  @param secret <#secret description#>
+ *  @param secret The secret used for encryption
  *
- *  @return <#return value description#>
+ *  @return The SHA1 encrypted string
  */
-- (NSString *)HMACSHA1WithSecret:(NSString *)secret;
+- (NSString *)SHA1WithSecret:(NSString *)secret;
 
 @end

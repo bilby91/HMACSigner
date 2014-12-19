@@ -34,7 +34,7 @@ static char base64EncodingTable[64] = {
   return base64String;
 }
 
-- (NSString *)HMACSHA1WithSecret:(NSString *)secret {
+-(NSString *)SHA1WithSecret:(NSString *)secret {
   const char *cKey   = [secret cStringUsingEncoding:NSUTF8StringEncoding];
   const char *cData  = [self cStringUsingEncoding:NSUTF8StringEncoding];
 

@@ -17,10 +17,9 @@
 
 - (void)signWithAccessIdentifier:(NSString *)accessIdentifier
                        andSecret:(NSString *)secret {
-
   [self setHMACHeaders];
 
-  NSString *encryptedCanonicalString = [[self HMACCanonicalString] HMACSHA1WithSecret:secret];
+  NSString *encryptedCanonicalString = [[self HMACCanonicalString] SHA1WithSecret:secret];
 
   NSString *header = [NSString stringWithFormat:@"APIAuth %@:%@",accessIdentifier,encryptedCanonicalString];
   [self addValue:header forHTTPHeaderField:@"Authorization"];
@@ -29,7 +28,6 @@
 #pragma mark - Private API
 
 - (NSString *)uriString {
-
   BOOL hasQueryParams    = self.URL.query.length > 0;
   NSString *query        = hasQueryParams ? [NSString stringWithFormat:@"?%@", [self decodeURLString:self.URL.query]] : @"" ;
 
@@ -69,8 +67,7 @@
   [self setValue:httpDate forHTTPHeaderField:@"Date"];
 }
 
-- (NSString*)decodeURLString:(NSString *)string
-{
+- (NSString*)decodeURLString:(NSString *)string {
   return (__bridge NSString *) CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef) string, CFSTR(""), kCFStringEncodingUTF8);
 }
 
