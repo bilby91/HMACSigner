@@ -20,9 +20,9 @@
 /**
  *  Calculates the SHA1 with the given secret
  *
- *  @param secret The secret used for encryption
+ *  @param secret The secret used 
  *
- *  @return The SHA1 encrypted string
+ *  @return The SHA1 hashed string
  */
 - (NSString *)SHA1WithSecret:(NSString *)secret;
 

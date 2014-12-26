@@ -12,8 +12,8 @@ HMACSigner signs your requests using HMAC + SHA1. It was adesigned to work with 
 Basically it does this
 
 1. Calculates a canonical string like this 'Content-Type,MD5(Body),URI,HTTPDate'
-2. Encrypts the canonical string using the secret
-3. Adds the 'Authorization' header with "APIAuth identifier:encryptedString" 
+2. Hashes the canonical string using the secret
+3. Adds the 'Authorization' header with "APIAuth identifier:hashedString" 
 
 To use it:
 
