@@ -15,7 +15,7 @@
 *  Content-MD5 headers are added to the request.
 *
 *  @param accessIdentifier The identifier of the user
-*  @param secret           The secret of the use
+*  @param secret           The secret used to hash the canonical string
 */
 - (void)signWithAccessIdentifier:(NSString *)accessIdentifier
                        andSecret:(NSString *)secret;
