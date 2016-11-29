@@ -9,7 +9,7 @@
 
 HMACSigner signs your requests using HMAC + SHA1. It was designed to work with [ApiAuth](https://github.com/mgomes/api_auth) gem.
 
-To sign a request the following steps are taken:
+To sign a request, the following steps are taken:
 
 1. Calculates a canonical string like this 'HTTPMethod,Content-Type,MD5(Body),URI,HTTPDate'
 2. Hashes the canonical string using the secret
