@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 
-target 'HMACSigner', :exclusive => true do
+target 'HMACSigner' do
   pod "HMACSigner", :path => "../"
 
   pod 'Kiwi'

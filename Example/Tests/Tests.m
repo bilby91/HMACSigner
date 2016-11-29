@@ -77,9 +77,8 @@ describe(@"HMACSigner", ^{
       });
 
       it(@"generates correctly a valid HMAC Hash", ^{
-        [[request.allHTTPHeaderFields[@"Authorization"] should] containString:@"0RrBpeUyRbW8Ot47flxJwdfKFK4="];
+        [[request.allHTTPHeaderFields[@"Authorization"] should] containString:@"klAeruNTZUhFWJSC/VRQvO7ISwM="];
       });
-
 
     });
 
@@ -92,7 +91,7 @@ describe(@"HMACSigner", ^{
       });
 
       it(@"generates correctly a valid HMAC Hash", ^{
-        [[request.allHTTPHeaderFields[@"Authorization"] should] containString:@"DAAR67Q4hzyxoR1ZyuthRaeb3RM="];
+        [[request.allHTTPHeaderFields[@"Authorization"] should] containString:@"+E2p74vTHBb3ARUVxcPlQekNOTU="];
       });
     });
   });
