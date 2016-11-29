@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "HMACSigner"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "HMACSigner signs your requests using HMAC + SHA1. It was a designed to work with ApiAuth."
   s.homepage         = "https://github.com/bilby91/HMACSigner"
   s.license          = 'MIT'

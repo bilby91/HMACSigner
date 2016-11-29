@@ -11,12 +11,13 @@ HMACSigner signs your requests using HMAC + SHA1. It was adesigned to work with 
 
 Basically it does this
 
-1. Calculates a canonical string like this 'Content-Type,MD5(Body),URI,HTTPDate'
+1. Calculates a canonical string like this 'HTTPMethod,Content-Type,MD5(Body),URI,HTTPDate'
 2. Hashes the canonical string using the secret
 3. Adds the 'Authorization' header with "APIAuth identifier:hashedString" 
 
 To use it:
 
+**Objective-C**
 ``` objc
   NSURL *url = [NSURL URLWithString:@"https://api.domain.com/users/me"];
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -25,6 +26,16 @@ To use it:
   [request setValue:@"application/text" forHTTPHeaderField:@"Content-Type"]; 
 
   [request signWithAccessIdentifier:@"userId" andSecret:@"secret"];
+```
+
+**Swift**
+```swift
+let request = NSMutableURLRequest( url: URL(string: "https://api.domain.com/users/me"))
+request.httpMethod = "POST"
+request.httpBody = "Message".data(using: .utf8)
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.sign(withAccessIdentifier: "userId", andSecret: "secret")
 ```
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -40,7 +51,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Martin Fernandez, me@bilby91.com
+Martin Fernandez <fmartin91@gmail.com>
 
 ## License
 
