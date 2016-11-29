@@ -12,14 +12,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		8943F85AA593E5B9624E0DA2 /* libPods-HMACSigner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C05061C163F1A23FAE9BDB /* libPods-HMACSigner.a */; };
+		F3389F7CB7A6A8AC4207B612 /* libPods-HMACSigner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9D42D9E8B5E234F8D62C7E /* libPods-HMACSigner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		002699CBCFDF7E10224FC5E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0E3A02FE87CB0D9651587132 /* Pods-HMACSigner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMACSigner.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner.release.xcconfig"; sourceTree = "<group>"; };
-		32C05061C163F1A23FAE9BDB /* libPods-HMACSigner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMACSigner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		468C522FBAC1DC979690E9A1 /* Pods-HMACSigner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMACSigner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner.debug.xcconfig"; sourceTree = "<group>"; };
+		208AA3C05B260E3D5CAFAF59 /* Pods-HMACSigner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMACSigner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner.debug.xcconfig"; sourceTree = "<group>"; };
+		2A89754665CD4A31F2549718 /* Pods-HMACSigner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMACSigner.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HMACSigner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMACSigner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -32,6 +31,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		9E3431AB1CDF365F174CD71F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B6FA22A0A3D6AB3D60DCEFC2 /* HMACSigner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HMACSigner.podspec; path = ../HMACSigner.podspec; sourceTree = "<group>"; };
+		EE9D42D9E8B5E234F8D62C7E /* libPods-HMACSigner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HMACSigner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +42,22 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				8943F85AA593E5B9624E0DA2 /* libPods-HMACSigner.a in Frameworks */,
+				F3389F7CB7A6A8AC4207B612 /* libPods-HMACSigner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590375A75BB46A25D304195D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208AA3C05B260E3D5CAFAF59 /* Pods-HMACSigner.debug.xcconfig */,
+				2A89754665CD4A31F2549718 /* Pods-HMACSigner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +65,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				FB931FFEDEE2FAAB1D611B8C /* Pods */,
+				590375A75BB46A25D304195D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +85,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				32C05061C163F1A23FAE9BDB /* libPods-HMACSigner.a */,
+				EE9D42D9E8B5E234F8D62C7E /* libPods-HMACSigner.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,15 +119,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		FB931FFEDEE2FAAB1D611B8C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				468C522FBAC1DC979690E9A1 /* Pods-HMACSigner.debug.xcconfig */,
-				0E3A02FE87CB0D9651587132 /* Pods-HMACSigner.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,11 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HMACSigner" */;
 			buildPhases = (
-				A1D877F938C5E471867C7090 /* Check Pods Manifest.lock */,
+				D132CB751B8AC83C32236BE0 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				680C94C4C77C646626E31979 /* Copy Pods Resources */,
+				9A897F9D2AEFB6BC84653B02 /* [CP] Embed Pods Frameworks */,
+				ABA1E40B8CFE27DE5D87051E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,10 +149,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HM;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Martin Fernandez";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = MQ34R7VLBH;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -186,14 +189,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		680C94C4C77C646626E31979 /* Copy Pods Resources */ = {
+		9A897F9D2AEFB6BC84653B02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA1E40B8CFE27DE5D87051E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,19 +219,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMACSigner/Pods-HMACSigner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1D877F938C5E471867C7090 /* Check Pods Manifest.lock */ = {
+		D132CB751B8AC83C32236BE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -254,13 +272,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -273,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,20 +317,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -315,8 +344,10 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 468C522FBAC1DC979690E9A1 /* Pods-HMACSigner.debug.xcconfig */;
+			baseConfigurationReference = 208AA3C05B260E3D5CAFAF59 /* Pods-HMACSigner.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MQ34R7VLBH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -329,6 +360,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -337,8 +369,10 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3A02FE87CB0D9651587132 /* Pods-HMACSigner.release.xcconfig */;
+			baseConfigurationReference = 2A89754665CD4A31F2549718 /* Pods-HMACSigner.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MQ34R7VLBH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -347,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

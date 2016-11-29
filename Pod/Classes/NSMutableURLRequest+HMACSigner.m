@@ -56,7 +56,7 @@
   [self setValue:bodyMD5 forHTTPHeaderField:@"Content-MD5"];
   [self setValue:httpDate forHTTPHeaderField:@"Date"];
 
-  return [NSString stringWithFormat:@"%@,%@,%@,%@",contentType,bodyMD5,uri,httpDate];
+  return [NSString stringWithFormat:@"%@,%@,%@,%@,%@",self.HTTPMethod.uppercaseString, contentType, bodyMD5, uri, httpDate];
 }
 
 - (void)setHMACHeaders {
